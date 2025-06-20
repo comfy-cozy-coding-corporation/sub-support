@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "sub-support"
+version = "0.1.0"
+description = ""
+authors = [
+    "Lilith Roth <lilith@roth.systems>"
+]
+readme = "README.md"
+packages = [
+    {include = "src"},
+    {include = "src/cogs"},
+    {include = "src/database"},
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.12.13"
+aiosqlite = "^0.21.0"
+discord-py = "2.5.2"
+python-dotenv = "^1.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

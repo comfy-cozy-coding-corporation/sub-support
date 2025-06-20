@@ -1,8 +1,8 @@
-FROM python:3.12.9-slim-bookworm
+FROM weastur/poetry:2.1.3-python-3.12-alpine3.20
 
 WORKDIR /bot
 COPY . /bot
 
-RUN python -m pip install -r requirements.txt
+RUN poetry install
 
-ENTRYPOINT [ "python", "bot.py" ]
+ENTRYPOINT [ "poetry", "run", "python", "src/bot.py" ]
