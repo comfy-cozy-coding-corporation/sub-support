@@ -85,16 +85,16 @@ To start the bot you simply need to launch, either your terminal (Linux, Mac & W
 Windows)
 .
 
-Before running the bot you will need to install all the requirements with this command:
+Before running the bot you will need to install all the requirements with this command (make sure you have [Poetry](https://python-poetry.org/docs/) installed beforehand):
 
 ```
-python -m pip install -r requirements.txt
+poetry install
 ```
 
 After that you can start it with
 
 ```
-python bot.py
+poetry run python src/bot.py
 ```
 
 > **Note**: You may need to replace `python` with `py`, `python3`, `python3.11`, etc. depending on what Python versions you have installed on the machine.
